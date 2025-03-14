@@ -1,0 +1,128 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+
+ol {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #fbffe2;
+}
+
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+.image-container img{
+    width: 200px;
+    height:auto;
+    border-radius: 5px;
+}
+/* Responsive for tablets and smaller screens */
+@media (max-width: 768px) {
+    .image-container img {
+        width: calc(33.33% - 10px); /* Show 3 images per row */
+    }
+}
+
+/* Responsive for mobile screens */
+@media (max-width: 480px) {
+    .image-container img {
+        width: calc(50% - 10px); /* Show 2 images per row */
+    }
+}
+
+form {
+    background: #edebf4;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #3364c6;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #e8e2e2;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
